@@ -1,0 +1,45 @@
+body{
+    background-color: #4a4a4a;
+    color: azure;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans;
+    ::placeholder{
+        opacity: 1;
+        color: azure;
+    }
+    #layout-main{
+        margin-top: 50px;
+    }
+    .page-heading{
+        margin-top: 50px;
+        padding: 1rem;
+        width: 100%;
+    }
+
+
+    .login-signup-btn{
+        height: auto;
+        font-size: medium;
+        width: auto;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        background: #4a4a4a;
+        outline: none;
+        border: none;
+        color: azure;
+        cursor: pointer;
+    }
+    .delete{
+        
+        
+        
+        a{
+            color: azure;
+            text-decoration: none;
+            
+        }
+    }
+
+
+}

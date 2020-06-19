@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/css/sign-up-login.css">
+
+<h1 class="page-heading">Welcome to the sign up page of CODEIAL, create a free account here.</h1>
+
+<form class="login-signup-form" action="/users/create" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    <button class="login-signup-btn" type="submit">Create Account</button>
+</form>
+
+<p>
+    <a href="/users/auth/google">
+        <button><i class="fab fa-google"></i> &nbsp Sign in/Sign Up with Google</button>
+    </a>
+</p>

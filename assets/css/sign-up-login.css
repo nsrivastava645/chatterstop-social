@@ -1,0 +1,34 @@
+.login-signup-form {
+  margin: 2rem auto;
+  background: darkseagreen;
+  max-width: 300px;
+  padding: 1rem;
+  border-radius: 1rem; }
+  .login-signup-form input {
+    background-color: #4a4a4a;
+    width: 90%;
+    color: azure;
+    display: block;
+    border: none;
+    height: 2rem;
+    margin: 1rem auto;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    border-radius: 0.3rem; }
+  .login-signup-form ::placeholder {
+    color: azure;
+    font-size: 1rem; }
+
+h1 {
+  color: azure;
+  width: 45%;
+  margin: 2rem auto;
+  font-style: oblique;
+  font-family: monospace; }
+
+.show-pass-icon {
+  position: relative;
+  color: azure;
+  left: 110px;
+  top: 40px; }

@@ -1,0 +1,42 @@
+
+<link rel="stylesheet" href="/css/home.css">
+<div id="home-container">
+     <section id="feed-posts">
+          <h4 class="section-heading">Posts</h4>
+               <!-- check if the user is logged in to show the posting form else show posts only -->
+               <!-- also authenticate the user in posts .js using passport  -->
+          <% if (locals.user) {%>
+                
+          <form action="/posts/create" id="new-post-form" method="POST">
+               <textarea name="content"  cols="30" rows="3" placeholder="Type your post here...." required></textarea>
+               <button type="submit" class="login-signup-btn">Post</button>
+          </form>
+          <% } %>
+          <div id="posts-list-container">
+               <ul>
+                    <% for (post of posts) { %> 
+                    
+                    <%- include('_post') -%>
+                    
+                    <% } %>
+               </ul>
+          </div>
+     
+     </section>
+     
+     <section id="user-friends">
+          <h4 class="section-heading">Friends</h4>
+          <% for(u of all_users) {%>
+     
+               <p>
+                    <a href="/users/profile/<%= u.id %>"><%= u.name %></a>
+               </p>
+     
+          <%}%>
+     </section>
+
+</div>
+<script type="text/javascript" src="/js/home_posts.js"></script>
+
+
+

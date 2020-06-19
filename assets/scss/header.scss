@@ -1,0 +1,33 @@
+header{
+        
+    #home-link{
+        color: azure;
+        text-decoration: none;
+    }
+    .nav-buttons{
+        li{
+            display: inline-block;
+        }
+        font-size: 15px;
+        list-style: none;
+        padding: 5px;
+        margin: 0;
+        margin-right: 3rem;
+        a{
+            text-decoration: none;
+            color: azure;
+            padding: 0.2rem;
+        }
+    }
+    font-size: xx-large;
+    padding: 0.25rem 2rem;
+    width: 100%;
+    top: 0;
+    // height: 40px;
+    background-color: darkseagreen;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+

@@ -1,0 +1,22 @@
+
+<link rel="stylesheet" href="/css/header.css">
+<header>
+    <a id="home-link" href="/">Chatterstop <i class="fas fa-comments"></i></a>
+    <ul class="nav-buttons">
+        <% if (locals.user) { %>
+        <li>
+            <a href="/users/profile/<%= user.id %>">
+                <%= user.name %>
+            </a>
+        </li>
+        <li>
+            <a href="/users/sign-out"><button class="login-signup-btn">Log out</button></a>
+        </li>
+        <% }else{ %>
+            <li><a href="/users/sign-in"><button class="login-signup-btn">Log in</button></a></li>
+            <li><a href="/users/sign-up"><button class="login-signup-btn">Sign Up</button></a></li>
+
+        <%  } %>
+
+    </ul>
+</header>

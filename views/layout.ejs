@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <%- style %>
+    </head>
+
+    <body>
+        
+        <%- include('_header'); %>
+        
+
+
+        <main id = "layout-main">
+            <%- body %>
+        </main>
+        
+        <%- include('_footer'); %>
+
+        <%- script %>
+
+        <script>
+            <% if (flash.success && flash.success.length > 0 ) { %>
+                new Noty({
+                    theme: 'semanticui',
+                    text: "<%= flash.success %>",
+                    type: 'success',
+                    layout:'topRight',
+                    timeout: 1500
+                    
+                }).show();
+            <% } %>
+
+            <% if (flash.delete && flash.delete.length > 0 ) { %>
+                new Noty({
+                    theme: 'relax',
+                    text: "<%= flash.delete %>",
+                    type: 'error',
+                    layout:'topRight',
+                    timeout: 1500
+                    
+                }).show();
+            <% } %>
+
+            <% if (flash.error && flash.error.length > 0 ) { %>
+                new Noty({
+                    theme: 'relax',
+                    text: "<%= flash.error %>",
+                    type: 'error',
+                    layout:'topRight',
+                    timeout: 1500
+                    
+                }).show();
+            <% } %>
+        </script>
+
+    </body>
+
+
+
+</html>
