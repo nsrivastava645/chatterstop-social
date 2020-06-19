@@ -63,6 +63,10 @@ Type your feelings into the textarea and hit post, your postwill be published wi
 
 
 
+<h1>Logging out</h1>
+Hit the log out button on top right and thereyou go.
+
+![alt text](https://i.ibb.co/c6TRxf9/logoutscreen.png)
 
 
 
@@ -72,11 +76,14 @@ Type your feelings into the textarea and hit post, your postwill be published wi
 
 
 
-https://i.ibb.co/c6TRxf9/logoutscreen.png
 
 
 
 
 
-https://i.ibb.co/YN53hxL/comment-byanotheruser.png
+
+
+
+
+
 
