@@ -1,5 +1,14 @@
 # chatterstop-social
-A social networking platform you can express yourself without being judged, so create and account and get going.
+A social networking platform where you can express yourself without being judged, so create an account and start expressing.
+Tech used:
+<ul>
+  <li>Node JS for runtime environment</li>
+  <li>Express JS for server</li>
+  <li>EJS for Views and templating</li>
+  <li>Mongo DB for Database</li>
+  <li>Redis for Mailing Jobs</li>
+  <li>Kue for Batching</li>
+</ul>
 <h1>1. Landing Page</h1>
 You can see the posts and comments on them here but you can not comment or post anything without logging in.
 Select Log in or Sign Up to start using chatterstop.
